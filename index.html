@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>PT78</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <img id="PIC" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781631586613/my-family-and-me-9781631586613_lg.jpg">
+        <h3 id="name"></h3>
+        <button onclick="change()">next</button>
+    </body>
+    <script>
+var images=["https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781631586613/my-family-and-me-9781631586613_lg.jpg","https://image.shutterstock.com/image-vector/cute-grandfather-cartoon-260nw-726215185.jpg","https://us.123rf.com/450wm/ylivdesign/ylivdesign1605/ylivdesign160500244/56085314-dad-icon-in-cartoon-style-on-a-white-background.jpg?ver=6","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFvO_XnANODA4Mj7IykzHHUKkWNKzHKxylQ&usqp=CAU","https://previews.123rf.com/images/dualororua/dualororua1707/dualororua170700490/83226998-big-brother-doing-piggyback-ride-younger-brother.jpg"];
+var names=["Family book","Vishnu","Shekhar","Smita","Rover and Max"];
+var i=0;
+function change()
+{
+    i++;
+    var members=4;
+    if(i> members)
+    {
+        i=0;
+    }
+    document.getElementById("PIC").src=images[i];
+    document.getElementById("name").innerHTML=names[i];
+}
+    </script>
+</html>
